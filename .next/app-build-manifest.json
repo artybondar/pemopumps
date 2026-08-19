@@ -1,0 +1,96 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-0cf8ac5c511b6a73.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-d999a7d6833d3983.js",
+      "static/chunks/main-app-15ab44f5df10c2c6.js",
+      "static/chunks/app/_not-found/page-153d3fa38a01485a.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-0cf8ac5c511b6a73.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-d999a7d6833d3983.js",
+      "static/chunks/main-app-15ab44f5df10c2c6.js",
+      "static/css/283d337fe09a9f2b.css",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/412-581affc95cc9b060.js",
+      "static/chunks/app/layout-b721fef077407b15.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-0cf8ac5c511b6a73.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-d999a7d6833d3983.js",
+      "static/chunks/main-app-15ab44f5df10c2c6.js",
+      "static/chunks/356-574de708605a46a1.js",
+      "static/chunks/app/about/page-843d614e11608589.js"
+    ],
+    "/become-dealer/page": [
+      "static/chunks/webpack-0cf8ac5c511b6a73.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-d999a7d6833d3983.js",
+      "static/chunks/main-app-15ab44f5df10c2c6.js",
+      "static/chunks/app/become-dealer/page-dcc38a136dde25ff.js"
+    ],
+    "/catalog/page": [
+      "static/chunks/webpack-0cf8ac5c511b6a73.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-d999a7d6833d3983.js",
+      "static/chunks/main-app-15ab44f5df10c2c6.js",
+      "static/chunks/app/catalog/page-dcc38a136dde25ff.js"
+    ],
+    "/products/page": [
+      "static/chunks/webpack-0cf8ac5c511b6a73.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-d999a7d6833d3983.js",
+      "static/chunks/main-app-15ab44f5df10c2c6.js",
+      "static/chunks/app/products/page-dcc38a136dde25ff.js"
+    ],
+    "/purchase/leasing/page": [
+      "static/chunks/webpack-0cf8ac5c511b6a73.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-d999a7d6833d3983.js",
+      "static/chunks/main-app-15ab44f5df10c2c6.js",
+      "static/chunks/app/purchase/leasing/page-dcc38a136dde25ff.js"
+    ],
+    "/purchase/delivery/page": [
+      "static/chunks/webpack-0cf8ac5c511b6a73.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-d999a7d6833d3983.js",
+      "static/chunks/main-app-15ab44f5df10c2c6.js",
+      "static/chunks/app/purchase/delivery/page-dcc38a136dde25ff.js"
+    ],
+    "/purchase/page": [
+      "static/chunks/webpack-0cf8ac5c511b6a73.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-d999a7d6833d3983.js",
+      "static/chunks/main-app-15ab44f5df10c2c6.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/purchase/page-549114d43527f6bf.js"
+    ],
+    "/testimonials/page": [
+      "static/chunks/webpack-0cf8ac5c511b6a73.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-d999a7d6833d3983.js",
+      "static/chunks/main-app-15ab44f5df10c2c6.js",
+      "static/chunks/app/testimonials/page-dcc38a136dde25ff.js"
+    ],
+    "/purchase/service/page": [
+      "static/chunks/webpack-0cf8ac5c511b6a73.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-d999a7d6833d3983.js",
+      "static/chunks/main-app-15ab44f5df10c2c6.js",
+      "static/chunks/app/purchase/service/page-dcc38a136dde25ff.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-0cf8ac5c511b6a73.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-d999a7d6833d3983.js",
+      "static/chunks/main-app-15ab44f5df10c2c6.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/412-581affc95cc9b060.js",
+      "static/chunks/878-2a02162c9ab0b4b5.js",
+      "static/chunks/app/page-f97f2a223eea2464.js"
+    ]
+  }
+}

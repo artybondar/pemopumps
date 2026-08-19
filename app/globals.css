@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #060E1A;
+    color: #E2E8F0;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Глобальные контейнеры */
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Супер-адаптивные отступы */
+  .section-padding {
+    @apply py-12 sm:py-16 md:py-20 lg:py-24;
+  }
+
+  /* Адаптивные шрифты для всех размеров */
+  .heading-1 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold leading-tight;
+  }
+
+  .heading-2 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-bold leading-tight;
+  }
+
+  .heading-3 {
+    @apply text-lg sm:text-xl md:text-2xl font-display font-bold leading-tight;
+  }
+
+  /* Для экранов 300-360px */
+  @media (max-width: 360px) {
+    .heading-1 {
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+    .heading-2 {
+      font-size: 1.25rem;
+    }
+    .heading-3 {
+      font-size: 1rem;
+    }
+    .container {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+  }
+
+  /* Для экранов 361-480px */
+  @media (min-width: 361px) and (max-width: 480px) {
+    .heading-1 {
+      font-size: 1.75rem;
+    }
+    .heading-2 {
+      font-size: 1.5rem;
+    }
+    .heading-3 {
+      font-size: 1.125rem;
+    }
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  /* Для экранов 481-640px */
+  @media (min-width: 481px) and (max-width: 640px) {
+    .heading-1 {
+      font-size: 2rem;
+    }
+    .heading-2 {
+      font-size: 1.75rem;
+    }
+  }
+
+  /* Скрыть скроллбар */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0A1628;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D4865E;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B86A42;
+  }
+}
