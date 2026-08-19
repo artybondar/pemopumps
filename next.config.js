@@ -1,13 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', 
+  output: 'export',
   images: {
-    remotePatterns: [],
     unoptimized: true,
   },
+  trailingSlash: true,
   reactStrictMode: true,
   poweredByHeader: false,
-  trailingSlash: true,
+  
+  distDir: 'out', 
+  skipTrailingSlashRedirect: true,
 };
 
 module.exports = nextConfig;

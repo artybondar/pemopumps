@@ -4,10 +4,10 @@
   "/become-dealer/page": "/become-dealer",
   "/catalog/page": "/catalog",
   "/products/page": "/products",
-  "/purchase/leasing/page": "/purchase/leasing",
   "/purchase/delivery/page": "/purchase/delivery",
+  "/purchase/leasing/page": "/purchase/leasing",
   "/purchase/page": "/purchase",
-  "/testimonials/page": "/testimonials",
   "/purchase/service/page": "/purchase/service",
+  "/testimonials/page": "/testimonials",
   "/page": "/"
 }

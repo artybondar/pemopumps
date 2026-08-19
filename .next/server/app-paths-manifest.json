@@ -4,10 +4,10 @@
   "/become-dealer/page": "app/become-dealer/page.js",
   "/catalog/page": "app/catalog/page.js",
   "/products/page": "app/products/page.js",
-  "/purchase/leasing/page": "app/purchase/leasing/page.js",
   "/purchase/delivery/page": "app/purchase/delivery/page.js",
+  "/purchase/leasing/page": "app/purchase/leasing/page.js",
   "/purchase/page": "app/purchase/page.js",
-  "/testimonials/page": "app/testimonials/page.js",
   "/purchase/service/page": "app/purchase/service/page.js",
+  "/testimonials/page": "app/testimonials/page.js",
   "/page": "app/page.js"
 }
