@@ -99,18 +99,23 @@ export default function Hero() {
 
                   {/* Импеллер (статичный) */}
                   <g>
-                    {[0, 60, 120, 180, 240, 300].map((deg, idx) => {
-                      const rad = (deg * Math.PI) / 180;
-                      const x1 = 250 + 40 * Math.cos(rad);
-                      const y1 = 250 + 40 * Math.sin(rad);
-                      const x2 = 250 + 95 * Math.cos(rad - 0.3);
-                      const y2 = 250 + 95 * Math.sin(rad - 0.3);
-                      const x3 = 250 + 95 * Math.cos(rad + 0.3);
-                      const y3 = 250 + 95 * Math.sin(rad + 0.3);
-                      return (
-                        <path key={idx} d={`M ${x1} ${y1} L ${x2} ${y2} A 95 95 0 0 1 ${x3} ${y3} Z`} fill={idx % 2 === 0 ? '#E8A87C' : '#D4865E'} opacity="0.85"/>
-                      );
-                    })}
+                      ${[0, 60, 120, 180, 240, 300].map((deg, idx) => {
+                          const rad = (deg * Math.PI) / 180;
+                          const x1 = 250 + 40 * Math.cos(rad);
+                          const y1 = 250 + 40 * Math.sin(rad);
+                          const x2 = 250 + 95 * Math.cos(rad - 0.3);
+                          const y2 = 250 + 95 * Math.sin(rad - 0.3);
+                          const x3 = 250 + 95 * Math.cos(rad + 0.3);
+                          const y3 = 250 + 95 * Math.sin(rad + 0.3);
+                          return `
+                              <path 
+                                  key="${idx}" 
+                                  d="M ${x1} ${y1} L ${x2} ${y2} A 95 95 0 0 1 ${x3} ${y3} Z" 
+                                  fill="${idx % 2 === 0 ? '#E8A87C' : '#D4865E'}" 
+                                  opacity="0.85"
+                              />
+                          `;
+                      }).join('')}
                   </g>
 
                   {/* Центральная ступица */}
@@ -205,8 +210,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
               className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 bg-copper-500/10 border border-copper-500/20 rounded-full text-copper-400 text-xs sm:text-sm font-medium mb-4 sm:mb-6"
-            >
-              ⚙️ Инженерные решения с 1955 года
+            >⚙️ Инженерные решения с 1947 года
             </motion.div>
 
             <motion.h1

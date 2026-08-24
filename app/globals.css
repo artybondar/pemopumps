@@ -105,3 +105,99 @@
     background: #B86A42;
   }
 }
+
+@layer components {
+  .footer {
+    @apply bg-navy-800 border-t border-white/5;
+    padding: 3rem 0 2rem;
+    margin-top: 0;
+  }
+
+  .footer .container {
+    @apply grid grid-cols-1 gap-8;
+  }
+
+  @media (min-width: 768px) {
+    .footer .container {
+      @apply grid-cols-[2fr_1fr_1fr_1fr] gap-8;
+    }
+  }
+
+  .footer .brand {
+    @apply flex flex-col gap-3;
+  }
+
+  .footer .brand .logo {
+    @apply font-display font-bold text-2xl text-white flex items-center gap-2;
+  }
+
+  .footer .brand .logo span {
+    @apply text-copper-500;
+  }
+
+  .footer .brand .logo .badge {
+    @apply w-8 h-8 bg-copper-500 rounded-lg flex items-center justify-center text-sm;
+  }
+
+  .footer .brand p {
+    @apply text-slate-400 text-sm max-w-md leading-relaxed;
+  }
+
+  .footer .social {
+    @apply flex gap-3 mt-1;
+  }
+
+  .footer .social a {
+    @apply w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center transition-all duration-300 text-slate-400 hover:bg-copper-500 hover:text-white hover:-translate-y-0.5;
+  }
+
+  .footer .social a svg {
+    @apply w-5 h-5;
+  }
+
+  .footer h4 {
+    @apply text-white font-semibold text-base mb-3 tracking-wide;
+  }
+
+  .footer ul {
+    @apply list-none p-0 m-0 flex flex-col gap-2;
+  }
+
+  .footer ul li a {
+    @apply text-slate-400 text-sm transition-colors duration-200 hover:text-white;
+  }
+
+  .footer .contacts li {
+    @apply flex items-center gap-3 text-slate-400 text-sm;
+  }
+
+  .footer .contacts li svg {
+    @apply w-4 h-4 text-copper-400 flex-shrink-0;
+  }
+
+  .footer .contacts li a {
+    @apply text-slate-400 transition-colors duration-200 hover:text-white;
+  }
+
+  .footer .bottom {
+    @apply col-span-full border-t border-white/5 pt-6 mt-2 flex flex-col items-center gap-2 text-center;
+  }
+
+  @media (min-width: 768px) {
+    .footer .bottom {
+      @apply flex-row justify-between text-left;
+    }
+  }
+
+  .footer .bottom p {
+    @apply text-slate-500 text-sm;
+  }
+
+  .footer .bottom a {
+    @apply text-slate-500 text-sm transition-colors duration-200 hover:text-white;
+  }
+
+  .footer .bottom .links {
+    @apply flex gap-6;
+  }
+}

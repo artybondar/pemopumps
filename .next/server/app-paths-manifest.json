@@ -1,8 +1,8 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/about/page": "app/about/page.js",
-  "/become-dealer/page": "app/become-dealer/page.js",
   "/catalog/page": "app/catalog/page.js",
+  "/become-dealer/page": "app/become-dealer/page.js",
   "/products/page": "app/products/page.js",
   "/purchase/delivery/page": "app/purchase/delivery/page.js",
   "/purchase/leasing/page": "app/purchase/leasing/page.js",

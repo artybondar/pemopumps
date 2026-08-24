@@ -1,8 +1,8 @@
 {
   "/_not-found/page": "/_not-found",
   "/about/page": "/about",
-  "/become-dealer/page": "/become-dealer",
   "/catalog/page": "/catalog",
+  "/become-dealer/page": "/become-dealer",
   "/products/page": "/products",
   "/purchase/delivery/page": "/purchase/delivery",
   "/purchase/leasing/page": "/purchase/leasing",

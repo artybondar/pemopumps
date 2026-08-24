@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Orbitron } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/ui/Navbar';
+import Footer from '@/components/ui/Footer'; 
 
 const inter = Inter({
   subsets: ['latin'],
@@ -48,6 +49,7 @@ export default function RootLayout({
       <body className="bg-navy-900 text-slate-200 font-sans antialiased">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

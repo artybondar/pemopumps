@@ -7,9 +7,11 @@ const nextConfig = {
   trailingSlash: true,
   reactStrictMode: true,
   poweredByHeader: false,
-  
-  distDir: 'out', 
   skipTrailingSlashRedirect: true,
+  
+  // для GitHub Pages
+  basePath: '/projects/pemopumps',
+  assetPrefix: '/projects/pemopumps',
 };
 
 module.exports = nextConfig;
