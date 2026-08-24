@@ -1,13 +1,14 @@
 {
   "/_not-found/page": "/_not-found",
   "/about/page": "/about",
-  "/catalog/page": "/catalog",
   "/become-dealer/page": "/become-dealer",
+  "/catalog/page": "/catalog",
   "/products/page": "/products",
   "/purchase/delivery/page": "/purchase/delivery",
   "/purchase/leasing/page": "/purchase/leasing",
-  "/purchase/page": "/purchase",
   "/purchase/service/page": "/purchase/service",
+  "/purchase/page": "/purchase",
   "/testimonials/page": "/testimonials",
-  "/page": "/"
+  "/page": "/",
+  "/contact/page": "/contact"
 }

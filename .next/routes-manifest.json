@@ -43,6 +43,12 @@
       "namedRegex": "^/catalog(?:/)?$"
     },
     {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
       "page": "/products",
       "regex": "^/products(?:/)?$",
       "routeKeys": {},
