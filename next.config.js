@@ -9,9 +9,8 @@ const nextConfig = {
   poweredByHeader: false,
   skipTrailingSlashRedirect: true,
   
-  // для GitHub Pages
-  basePath: '/projects/pemopumps',
-  assetPrefix: '/projects/pemopumps',
+  //basePath: '/projects/pemopumps',
+  //assetPrefix: '/projects/pemopumps',
 };
 
 module.exports = nextConfig;

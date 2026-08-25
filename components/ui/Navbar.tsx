@@ -1,9 +1,11 @@
+// components/ui/Navbar.tsx
 'use client';
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Container } from './Container';
 import { Button } from './Button';
 
@@ -12,11 +14,11 @@ const menuItems = [
     label: 'Каталог',
     href: '/catalog',
     submenu: [
-      { label: 'Вертикальные насосы', href: '/catalog#vertical' },
-      { label: 'Горизонтальные насосы', href: '/catalog#horizontal' },
-      { label: 'Многоступенчатые насосы', href: '/catalog#multistage' },
-      { label: 'Из суперпрочной стали', href: '/catalog#super-steel' },
-      { label: 'Погружные насосы', href: '/catalog#submersible' },
+      { label: 'Вертикальные насосы', href: '/catalog/vertical' },
+      { label: 'Горизонтальные насосы', href: '/catalog/horizontal' },
+      { label: 'Многоступенчатые насосы', href: '/catalog/multistep' },
+      { label: 'Из суперпрочной стали', href: '/catalog/super-durable-steel' },
+      { label: 'Погружные насосы', href: '/catalog/immersible' },
     ],
   },
   { label: 'О компании', href: '/about' },
@@ -39,6 +41,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [catalogOpen, setCatalogOpen] = useState(false);
   const [purchaseOpen, setPurchaseOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,14 +64,31 @@ export default function Navbar() {
     };
   }, [isOpen]);
 
-  const scrollToSection = (id: string) => {
-    setIsOpen(false);
-    setCatalogOpen(false);
-    setPurchaseOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Функция для проверки активного пункта меню
+  const isActive = (href: string) => {
+    if (href === '/') {
+      return pathname === href;
     }
+    return pathname?.startsWith(href) || false;
+  };
+
+  // Функция для проверки активного подпункта
+  const isSubmenuActive = (submenuItems: { href: string }[]) => {
+    return submenuItems.some(item => pathname?.startsWith(item.href));
+  };
+
+  // Функция для получения класса активного пункта
+  const getActiveClass = (href: string) => {
+    return isActive(href) 
+      ? 'text-white font-medium' 
+      : 'text-slate-300 hover:text-white transition-colors';
+  };
+
+  // Функция для получения класса активного подпункта
+  const getSubmenuActiveClass = (href: string) => {
+    return isActive(href)
+      ? 'text-white bg-navy-700/50'
+      : 'text-slate-300 hover:text-white hover:bg-navy-700/50';
   };
 
   return (
@@ -95,6 +115,7 @@ export default function Navbar() {
               if (item.submenu) {
                 const isOpenSubmenu = item.label === 'Каталог' ? catalogOpen : purchaseOpen;
                 const setIsOpenSubmenu = item.label === 'Каталог' ? setCatalogOpen : setPurchaseOpen;
+                const isSubActive = isSubmenuActive(item.submenu);
 
                 return (
                   <div
@@ -105,7 +126,11 @@ export default function Navbar() {
                   >
                     <Link
                       href={item.href}
-                      className="text-slate-300 hover:text-white transition-colors flex items-center gap-1 text-sm xl:text-base"
+                      className={`flex items-center gap-1 text-sm xl:text-base ${
+                        isSubActive || isActive(item.href)
+                          ? 'text-white font-medium'
+                          : 'text-slate-300 hover:text-white transition-colors'
+                      }`}
                     >
                       {item.label}
                       <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isOpenSubmenu ? 'rotate-180' : ''}`} />
@@ -122,7 +147,11 @@ export default function Navbar() {
                             <Link
                               key={sub.label}
                               href={sub.href}
-                              className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-navy-700/50 transition-colors"
+                              className={`block px-4 py-2 text-sm transition-colors ${
+                                isActive(sub.href)
+                                  ? 'text-white bg-navy-700/50'
+                                  : 'text-slate-300 hover:text-white hover:bg-navy-700/50'
+                              }`}
                               onClick={() => setIsOpenSubmenu(false)}
                             >
                               {sub.label}
@@ -138,7 +167,7 @@ export default function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="text-slate-300 hover:text-white transition-colors text-sm xl:text-base"
+                  className={`text-sm xl:text-base ${getActiveClass(item.href)}`}
                 >
                   {item.label}
                 </Link>
@@ -190,12 +219,15 @@ export default function Navbar() {
                 if (item.submenu) {
                   const isOpenSubmenu = item.label === 'Каталог' ? catalogOpen : purchaseOpen;
                   const setIsOpenSubmenu = item.label === 'Каталог' ? setCatalogOpen : setPurchaseOpen;
+                  const isSubActive = isSubmenuActive(item.submenu);
 
                   return (
                     <div key={item.label} className="space-y-2">
                       <button
                         onClick={() => setIsOpenSubmenu(!isOpenSubmenu)}
-                        className="w-full text-left text-white font-medium flex items-center justify-between py-2"
+                        className={`w-full text-left font-medium flex items-center justify-between py-2 ${
+                          isSubActive || isActive(item.href) ? 'text-white' : 'text-white'
+                        }`}
                       >
                         {item.label}
                         <ChevronDown className={`w-4 h-4 transition-transform ${isOpenSubmenu ? 'rotate-180' : ''}`} />
@@ -212,7 +244,11 @@ export default function Navbar() {
                               <Link
                                 key={sub.label}
                                 href={sub.href}
-                                className="block text-slate-300 hover:text-white py-1.5 text-sm transition-colors"
+                                className={`block py-1.5 text-sm transition-colors ${
+                                  isActive(sub.href)
+                                    ? 'text-white font-medium'
+                                    : 'text-slate-300 hover:text-white'
+                                }`}
                                 onClick={() => setIsOpen(false)}
                               >
                                 {sub.label}
@@ -228,7 +264,11 @@ export default function Navbar() {
                   <Link
                     key={item.label}
                     href={item.href}
-                    className="block text-white font-medium py-2 hover:text-copper-400 transition-colors"
+                    className={`block py-2 transition-colors ${
+                      isActive(item.href)
+                        ? 'text-white font-medium'
+                        : 'text-slate-300 hover:text-white'
+                    }`}
                     onClick={() => setIsOpen(false)}
                   >
                     {item.label}

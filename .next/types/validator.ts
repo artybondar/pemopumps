@@ -54,10 +54,55 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../app/catalog/horizontal/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/catalog/horizontal">> = Specific
+  const handler = {} as typeof import("../../app/catalog/horizontal/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/catalog/immersible/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/catalog/immersible">> = Specific
+  const handler = {} as typeof import("../../app/catalog/immersible/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/catalog/multistep/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/catalog/multistep">> = Specific
+  const handler = {} as typeof import("../../app/catalog/multistep/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../app/catalog/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/catalog">> = Specific
   const handler = {} as typeof import("../../app/catalog/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/catalog/super-durable-steel/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/catalog/super-durable-steel">> = Specific
+  const handler = {} as typeof import("../../app/catalog/super-durable-steel/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/catalog/vertical/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/catalog/vertical">> = Specific
+  const handler = {} as typeof import("../../app/catalog/vertical/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

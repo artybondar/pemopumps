@@ -1,1 +1,135 @@
-{"version":3,"caseSensitive":false,"basePath":"/projects/pemopumps","rewrites":{"beforeFiles":[],"afterFiles":[],"fallback":[]},"redirects":[],"headers":[]}
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/become-dealer",
+      "regex": "^/become\\-dealer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/become\\-dealer(?:/)?$"
+    },
+    {
+      "page": "/catalog",
+      "regex": "^/catalog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/catalog(?:/)?$"
+    },
+    {
+      "page": "/catalog/horizontal",
+      "regex": "^/catalog/horizontal(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/catalog/horizontal(?:/)?$"
+    },
+    {
+      "page": "/catalog/immersible",
+      "regex": "^/catalog/immersible(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/catalog/immersible(?:/)?$"
+    },
+    {
+      "page": "/catalog/multistep",
+      "regex": "^/catalog/multistep(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/catalog/multistep(?:/)?$"
+    },
+    {
+      "page": "/catalog/super-durable-steel",
+      "regex": "^/catalog/super\\-durable\\-steel(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/catalog/super\\-durable\\-steel(?:/)?$"
+    },
+    {
+      "page": "/catalog/vertical",
+      "regex": "^/catalog/vertical(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/catalog/vertical(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/products",
+      "regex": "^/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products(?:/)?$"
+    },
+    {
+      "page": "/purchase",
+      "regex": "^/purchase(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/purchase(?:/)?$"
+    },
+    {
+      "page": "/purchase/delivery",
+      "regex": "^/purchase/delivery(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/purchase/delivery(?:/)?$"
+    },
+    {
+      "page": "/purchase/leasing",
+      "regex": "^/purchase/leasing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/purchase/leasing(?:/)?$"
+    },
+    {
+      "page": "/purchase/service",
+      "regex": "^/purchase/service(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/purchase/service(?:/)?$"
+    },
+    {
+      "page": "/testimonials",
+      "regex": "^/testimonials(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/testimonials(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

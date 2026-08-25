@@ -1,3 +1,4 @@
+// app/about/page.tsx
 import { Container } from '@/components/ui/Container';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 import { GlassCard } from '@/components/ui/GlassCard';
@@ -78,7 +79,6 @@ export default function AboutPage() {
                 </div>
               </div>
             </GlassCard>
-
           </div>
 
           {/* Правая колонка - картинки */}
@@ -90,6 +90,7 @@ export default function AboutPage() {
                   alt="Завод PEMO в Вимодроне, Италия"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
+                  priority
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy-900 to-transparent p-4">
                   <p className="text-white text-sm font-medium flex items-center gap-2">

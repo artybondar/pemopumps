@@ -1,0 +1,19 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/catalog/immersible/page": "/catalog/immersible",
+  "/catalog/horizontal/page": "/catalog/horizontal",
+  "/catalog/multistep/page": "/catalog/multistep",
+  "/catalog/page": "/catalog",
+  "/catalog/super-durable-steel/page": "/catalog/super-durable-steel",
+  "/become-dealer/page": "/become-dealer",
+  "/catalog/vertical/page": "/catalog/vertical",
+  "/products/page": "/products",
+  "/purchase/leasing/page": "/purchase/leasing",
+  "/purchase/delivery/page": "/purchase/delivery",
+  "/testimonials/page": "/testimonials",
+  "/purchase/service/page": "/purchase/service",
+  "/purchase/page": "/purchase",
+  "/page": "/",
+  "/contact/page": "/contact"
+}
